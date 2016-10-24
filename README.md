@@ -1,5 +1,5 @@
-M'fin Study Group
-======================
+My Friendly Study Group ;)
+==========================
 
 This group was created to refresh coding, problem analysis, and algorithm skills. 
 
