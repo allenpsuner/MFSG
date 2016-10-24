@@ -12,12 +12,12 @@ to the rest of the group.
 
 #### Members
 
-[Ian McCunn](https://github.com/imccunn)
-[Allen Suner](https://github.com/allenpsuner)
-[Ragz](https://github.com/ra9hav)
-[Angel Cantu](https://github.com/AngelCantugr)
-[Christian Townsdin](https://github.com/CTownsdin)
-[Nicu Parente](https://github.com/nicuparente)
+- [Ian McCunn](https://github.com/imccunn)
+- [Allen Suner](https://github.com/allenpsuner)
+- [Ragz](https://github.com/ra9hav)
+- [Angel Cantu](https://github.com/AngelCantugr)
+- [Christian Townsdin](https://github.com/CTownsdin)
+- [Nicu Parente](https://github.com/nicuparente)
 
 #### Resources
 
