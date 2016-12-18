@@ -41,7 +41,9 @@ Runtime here is a O(N + N) (if we count array construction as free).
 
 3. On the third pass we will keep a local maximum and update global as the value increases. O(K)
 
-Overall Runtime here is 2N + K ~ linear for some value.
+Overall Runtime here is 2N + K ~ linear for some value.  K could become a multiple of N and is not ideal
+for sparse data samples as the bin assignment / access will out weigh gains from non-comparative bin sorting.
+
 
 
 
