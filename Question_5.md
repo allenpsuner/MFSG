@@ -17,9 +17,9 @@ another which optimizes time, if we consider object creation as free.
 For the first and more common solution what we will do is:
 
 1. Sort the array so all entries are in order. O(NLogN)
-1a. In order to avoid duplicate miscount we must remove all duplicates or require <SET> as a pre-requisite.
+1a. In order to avoid duplicate miscount we must remove all duplicates O(N) or require <SET> as a pre-requisite.
 
-2. Set values i and j adjacent to eachother and ensure that we reset count when j - i does not equal 1.
+2. Set values i and j adjacent to each other and ensure that we reset count when j - i does not equal 1. O(N)
 
 3. Update a local counter and maintain a global maximum.
 
@@ -37,7 +37,7 @@ normalization here.)
 
 2. We will then instantiate an array and fill it (second pass) with the transformed data (a byte).
 
-Runtime here is a O(N + N + K) if we count array construction cost.
+Runtime here is a O(N + N) (if we count array construction as free).
 
 3. On the third pass we will keep a local maximum and update global as the value increases. O(K)
 
