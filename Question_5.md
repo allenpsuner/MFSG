@@ -23,7 +23,24 @@ For the first and more common solution what we will do is:
 
 3. Update a local counter and maintain a global maximum.
 
+private void sortAndFilter() {
+    Arrays.sort(input);
+    input = Arrays.stream(input).distinct().toArray();
+}
 
+private void findMaxUsingSort() {
+    int count = 1;
+    for(int i = 0, j = 1; i < input.length - 1; i++,j++) {
+        if(input[j] - input[i] == 1) {
+            if(maximumSequence < count++) {
+                maximumSequence = count;
+            }
+        } else {
+            count = 1;
+        }
+    }
+}
+        
 The second solution can be implemented using three passes of the array.  This implementation deals with
 duplicates and overlap of -1, 0, 1 however it requires memory and can be non-optimal for sparse samples.
 
