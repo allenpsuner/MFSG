@@ -72,26 +72,27 @@ Consider following linked list
 c = cell
 t = tracer
 
-
+```
 [a] -> [b] -> [c] -> [b]
 c,t
+```
 After first iteration both c and t are equal so we move c to the next element.
 
-
+```
 [a] -> [b] -> [c] -> [b]
 t      c
+```
 We reset t to start_point and compare if they are the same, since this is false we check if their .next link points to the same element since this is false we move t to the next element
+```
 [a] -> [b] -> [c] -> [b]
-
        c,t
-
+```
 Since both elements are the same we move c to the next element.
 
-
+```
 [a] -> [b] -> [c] -> [b]
-
 t              c
-
+```
 We reset t to start_point and compare if they are the same, since this is false we check if their .next link points to the same element which in this case is true meaning there's a loop.
 
 #### 2
