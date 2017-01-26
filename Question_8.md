@@ -7,7 +7,7 @@ Write an algorithm to reverse singly linked list in-place (don't use extra objec
 The key is to use 3 pointers instead of the assumed 2. A solution is written below in ruby. It assumes the linked list instance object is not null.
 
 ```ruby
-def reverse()
+def reverse
   curr_node = self.head
   prev_node = nil
   next_node = nil
