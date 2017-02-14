@@ -11,3 +11,30 @@ __Bonus:__
 Include the time complexity of your algorithm and how you arrived at that answer.
 
 ### Solution:
+
+The pattern follows the fibonacci sequence. Given the number of steps in the stairs as fibonacci (F), the corresponding amount of ways to climb it is fibonacci sequence plus one.
+
+
+```
+F 0 1 2 3 4 5 6...
+  | |\ \ \ \ \ \
+S 0 1 1 2 3 5 8 13...
+```
+
+```ruby
+def howManyWays(numSteps)
+  if(numSteps == 0)
+    return 0
+  elsif (numSteps == 1)
+    return 1
+  else
+    seq = [0, 1, 1]
+    while(seq.length <= numSteps+1)
+      seq << seq.last + seq[seq.length-2]
+    end
+  return seq.last
+  end
+end
+```
+
+**Performance: O(N)**
