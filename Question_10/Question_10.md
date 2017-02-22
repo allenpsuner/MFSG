@@ -21,4 +21,4 @@ Overall, we can scan the array twice to compute these values. We create an array
 We then iterate through the original input array, aggregating the collected water values at each index as explained above.
 
 ### Solution
-See computTrappedWater.js.
+See computeTrappedWater.js.
