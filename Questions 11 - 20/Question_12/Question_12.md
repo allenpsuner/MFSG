@@ -12,3 +12,25 @@ The function perimeter has for parameter n where n + 1 is the number of squares 
 
 
 ![alt tag](http://i.imgur.com/EYcuB1wm.jpg)
+
+  ### Solution:
+```javascript
+
+function fibonacci_series(n){
+    if (n === 1)
+    {
+        return [0, 1];
+    }
+    else
+    {
+        var s = fibonacci_series(n - 1);
+        s.push(s[s.length - 1] + s[s.length - 2]);
+        return s
+    }
+}
+
+function perimeter(n){
+    //The function perimeter has for parameter n where n + 1 is the number of squares 
+    return fibonacci_series(n + 1).reduce((acc, val) => (acc + val)) * 4;
+}
+```
