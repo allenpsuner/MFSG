@@ -7,8 +7,6 @@ Note: Math.random() is really only pseudorandom.
 
 const shuffle = (arr) => {
 
-  // don't mutate the array, make a shallow copy of the array with slice instead
-  let arrr = arr.slice();
 
   let current = arr.length - 1;
   let randomIndex;
@@ -20,14 +18,14 @@ const shuffle = (arr) => {
     randomIndex = Math.floor(Math.random() * ( current + 1));
 
     // swap current with random selection
-    tmp = arrr[current];
-    arrr[current] = arrr[randomIndex];
-    arrr[randomIndex] = tmp;
+    tmp = arr[current];
+    arr[current] = arr[randomIndex];
+    arr[randomIndex] = tmp;
 
     current--;
   }
 
-  return arrr;
+  return arr;
 };
 
 module.exports = shuffle;
